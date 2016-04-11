@@ -1,0 +1,11 @@
+<!-- A template to display the current patient at the top of the page -->
+
+<template name="currentPatient">
+  <div id="currPatient" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-right: 20px; text-align: right; margin-bottom: 25px;">
+    {{#if firstName}}
+      <b>Current Patient: </b> {{firstName}} {{lastName}}
+    {{else}}
+      <b>Current Patient: </b> N/A
+    {{/if}}
+  </div>
+</template>

@@ -1,0 +1,19 @@
+<!-- A simple page to remind the user to check for indicators of pain in an unconscious patient -->
+
+<template name="observe6">
+  <h2 class="command-text">⦿ Observe for the following indicators of pain: </h2>
+  <ul style="color: red" class="lead">
+    <li>Facial expressions</li>
+    <li>Verbalizations / vocalizations</li>
+    <li>Body movements</li>
+    <li>Altered interpersonal interactions</li>
+    <li>Changes in activity patterns or routines</li>
+    <li>Mental status changes</li>
+    <li>Physiological changes</li>
+  </ul>
+
+  <div style="text-align: center;">
+    <h2>Do you see any of these signs of pain?</h2>
+    {{> yesNoButtons}}
+  </div>
+</template>

@@ -1,0 +1,24 @@
+<!-- A template to insert the navbar on each page of the application -->
+
+<template name="navbar">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".pain-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span class="navbar-brand">Pain Reporting System</span>
+    </div>
+  
+    <div class="collapse navbar-collapse pain-navbar">
+      <ul class="nav navbar-nav">
+        <li id="landingNav" class="{{activeClass 'landing'}}"><a href="{{pathFor 'landing'}}">Landing Page</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        {{> loginButtons}}
+      </ul>
+    </div>
+  </nav>
+</template>

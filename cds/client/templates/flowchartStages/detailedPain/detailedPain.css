@@ -1,0 +1,14 @@
+/* Styles related only to the detailedPain template */
+
+select.form-control {
+  width: 50%;
+}
+
+#painLocationDiv {
+  background-color: #F8F8F8;
+  padding: 10px;
+  border: solid;
+  border-color: black;
+  border-width: 1px;
+  margin-top: 30px;
+}

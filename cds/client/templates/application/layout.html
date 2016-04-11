@@ -1,0 +1,11 @@
+<!-- The template the application will use to produce the layout for each page in the application -->
+
+<template name="layout">
+  {{> navbar}}
+  {{> currentPatient}}
+  <div class="container">
+    <div id="main">
+      {{> yield}}
+    </div>
+  </div>
+</template>
